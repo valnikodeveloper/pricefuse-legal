@@ -123,9 +123,9 @@ Termination or suspension does not limit any right or remedy otherwise available
 We may revise these Terms from time to time. Updated Terms may be posted within the App, on a website, or otherwise made available to users. Your continued use of the App after updated Terms are made available constitutes your acceptance of the updated Terms.
 
 ## Governing Law and Disputes
-To the maximum extent permitted by applicable law, these Terms and any dispute, claim, or controversy arising out of or relating to the App or these Terms shall be governed by the laws applicable in the developer's principal place of residence, excluding conflict-of-laws rules.
+These Terms and any dispute, claim, or controversy arising out of or relating to the App or these Terms are subject to applicable law, including any mandatory consumer protection laws that apply in your jurisdiction.
 
-To the maximum extent permitted by applicable law, you agree that any dispute, claim, or proceeding arising out of or relating to the App or these Terms shall be brought exclusively in the competent courts of the developer's principal place of residence, unless mandatory consumer protection law requires otherwise.
+Nothing in these Terms limits any non-waivable rights or remedies you may have under applicable law or prevents any claim from being brought in a forum required by applicable law.
 
 ## Severability and Waiver
 If any provision of these Terms is held unlawful, invalid, or unenforceable, that provision shall be enforced to the maximum extent permitted and the remaining provisions shall remain in full force and effect.
