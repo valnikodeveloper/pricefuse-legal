@@ -89,7 +89,9 @@ Those third-party services and components are outside our control. They may chan
 To the maximum extent permitted by law, we are not responsible for third-party acts, omissions, interruptions, data quality, outages, security incidents, pricing changes, policy changes, or service failures.
 
 ## Intellectual Property
-The App, including its software, design, visual assets, text, graphics, trademarks, and all related intellectual property rights, is owned by the developer or licensed to the developer and is protected by applicable intellectual property laws.
+The App, including its original source code, original design, text, branding, and other original content and materials, and all related intellectual property rights, is owned by the developer or licensed to the developer and is protected by applicable intellectual property laws.
+
+Apple-provided software, frameworks, fonts, SF Symbols, system icons, system user-interface elements, and other third-party materials are owned by Apple or their respective owners/licensors and are used subject to applicable licenses, terms, and platform rules.
 
 These Terms do not transfer any ownership rights to you. All rights not expressly granted are reserved.
 
