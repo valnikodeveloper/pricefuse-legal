@@ -3,7 +3,7 @@
 Last updated: March 18, 2026
 
 ## Overview and Acceptance
-These Terms of Use ("Terms") govern your use of the PriceFuse iOS application and any related content, features, upgrades, and services made available through the application (collectively, the "App"). The App is provided by Valerii Nikolaev ("we," "us," "our," or the "developer").
+These Terms of Use ("Terms") govern your use of the PriceFuse iOS and iPadOS application and any related content, features, upgrades, and services made available through the application (collectively, the "App"). The App is provided by Valerii Nikolaev ("we," "us," "our," or the "developer").
 
 By downloading, installing, accessing, or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.
 
@@ -98,37 +98,19 @@ TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE APP, ALL OUTPUTS, ALL DATA, ALL RECO
 
 TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, RELIABILITY, AVAILABILITY, COMPATIBILITY, QUIET ENJOYMENT, SECURITY, AND NON-INTERRUPTION.
 
-WITHOUT LIMITING THE FOREGOING, WE DO NOT WARRANT THAT:
-- THE APP WILL BE ACCURATE, CURRENT, COMPLETE, OR FIT FOR ANY PARTICULAR PURPOSE;
-- ANY OCR, CAMERA, PHOTO, OR VOICE-INPUT RESULT WILL BE CORRECT;
-- ANY EXCHANGE RATE, CONVERSION RESULT, OR CACHED VALUE WILL MATCH REAL-WORLD, MERCHANT, BANK, OR MARKET CONDITIONS;
-- THE APP WILL FUNCTION WITHOUT INTERRUPTION, LATENCY, ERROR, OR FAILURE;
-- ANY DEFECT WILL BE FOUND OR CORRECTED;
-- THE APP WILL BE COMPATIBLE WITH YOUR DEVICE, REGION, LANGUAGE, OR ACCOUNT CONFIGURATION.
+WITHOUT LIMITING THE FOREGOING, WE DO NOT WARRANT THAT THE APP WILL BE ACCURATE, CURRENT, COMPLETE, OR FIT FOR ANY PARTICULAR PURPOSE; THAT ANY OCR, CAMERA, PHOTO, OR VOICE-INPUT RESULT WILL BE CORRECT; THAT ANY EXCHANGE RATE, CONVERSION RESULT, OR CACHED VALUE WILL MATCH REAL-WORLD, MERCHANT, BANK, OR MARKET CONDITIONS; THAT THE APP WILL FUNCTION WITHOUT INTERRUPTION, LATENCY, ERROR, OR FAILURE; THAT ANY DEFECT WILL BE FOUND OR CORRECTED; OR THAT THE APP WILL BE COMPATIBLE WITH YOUR DEVICE, REGION, LANGUAGE, OR ACCOUNT CONFIGURATION.
 
 ## Limitation of Liability
 TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES WHATSOEVER, OR FOR ANY LOSS OF PROFITS, LOSS OF REVENUE, LOSS OF DATA, LOSS OF GOODWILL, BUSINESS INTERRUPTION, PURCHASE ERROR, PRICING ERROR, MISCHARGE, TAX ERROR, ACCOUNTING ERROR, OR OTHER COMMERCIAL OR NON-COMMERCIAL LOSS, ARISING OUT OF OR RELATED TO THE APP OR THESE TERMS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGE, OR LOSS ARISING FROM OR RELATED TO:
-- OCR, CAMERA, PHOTO, OR VOICE-INPUT ERROR;
-- EXCHANGE-RATE DISCREPANCIES, STALE CACHED DATA, OR THIRD-PARTY DATA ERROR;
-- YOUR USE OF OR RELIANCE ON APP OUTPUTS;
-- THIRD-PARTY PLATFORM, BILLING, OR SERVICE FAILURE;
-- PURCHASE, SUBSCRIPTION, RENEWAL, RESTORE, OR ENTITLEMENT ISSUES;
-- YOUR FAILURE TO VERIFY PRICES, AMOUNTS, CURRENCIES, TAXES, TOTALS, OR OTHER RESULTS BEFORE ACTING ON THEM.
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGE, OR LOSS ARISING FROM OR RELATED TO OCR, CAMERA, PHOTO, OR VOICE-INPUT ERROR; EXCHANGE-RATE DISCREPANCIES, STALE CACHED DATA, OR THIRD-PARTY DATA ERROR; YOUR USE OF OR RELIANCE ON APP OUTPUTS; THIRD-PARTY PLATFORM, BILLING, OR SERVICE FAILURE; PURCHASE, SUBSCRIPTION, RENEWAL, RESTORE, OR ENTITLEMENT ISSUES; OR YOUR FAILURE TO VERIFY PRICES, AMOUNTS, CURRENCIES, TAXES, TOTALS, OR OTHER RESULTS BEFORE ACTING ON THEM.
 
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER'S TOTAL AGGREGATE LIABILITY FOR ANY AND ALL CLAIMS ARISING OUT OF OR RELATED TO THE APP OR THESE TERMS SHALL NOT EXCEED:
-- IF YOU PAID FOR THE APP'S PAID FEATURES, THE TOTAL AMOUNT YOU PAID FOR THOSE FEATURES DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM; OR
-- IF YOU PAID NOTHING, ZERO, OR THE MINIMUM AMOUNT REQUIRED BY APPLICABLE LAW.
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER'S TOTAL AGGREGATE LIABILITY FOR ANY AND ALL CLAIMS ARISING OUT OF OR RELATED TO THE APP OR THESE TERMS SHALL NOT EXCEED, IF YOU PAID FOR THE APP'S PAID FEATURES, THE TOTAL AMOUNT YOU PAID FOR THOSE FEATURES DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM; OR, IF YOU PAID NOTHING, ZERO, OR THE MINIMUM AMOUNT REQUIRED BY APPLICABLE LAW.
 
 SOME JURISDICTIONS DO NOT ALLOW CERTAIN DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS. IN SUCH JURISDICTIONS, OUR LIABILITY SHALL BE LIMITED TO THE GREATEST EXTENT PERMITTED BY APPLICABLE LAW.
 
 ## Indemnification
-To the maximum extent permitted by law, you agree to defend, indemnify, and hold harmless the developer from and against any claims, actions, demands, proceedings, liabilities, damages, judgments, settlements, penalties, fines, losses, costs, and expenses, including reasonable legal fees, arising out of or related to:
-- your use or misuse of the App;
-- your breach of these Terms;
-- your violation of law, regulation, or third-party rights; or
-- your transactions, decisions, representations, or communications made using or in reliance on the App.
+To the maximum extent permitted by law, you agree to defend, indemnify, and hold harmless the developer from and against any claims, actions, demands, proceedings, liabilities, damages, judgments, settlements, penalties, fines, losses, costs, and expenses, including reasonable legal fees, arising out of or related to your use or misuse of the App, your breach of these Terms, your violation of law, regulation, or third-party rights, or your transactions, decisions, representations, or communications made using or in reliance on the App.
 
 ## Suspension and Termination
 We may suspend, restrict, or terminate the App or your access to some or all App features at any time, with or without notice, including where reasonably necessary for maintenance, updates, abuse prevention, legal compliance, security, technical issues, or product changes.
@@ -149,6 +131,5 @@ If any provision of these Terms is held unlawful, invalid, or unenforceable, tha
 Our failure to enforce any provision of these Terms shall not constitute a waiver of that provision or any other provision.
 
 ## Contact
-Developer: Valerii Nikolaev
-
+Developer: Valerii Nikolaev  
 Contact email: valnikodeveloper@gmail.com
