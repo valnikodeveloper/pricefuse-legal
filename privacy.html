@@ -55,160 +55,98 @@
   <main class="wrap">
     <article class="card">
       <h1>Privacy Policy for PriceFuse</h1>
-      <p class="muted"><strong>Last updated:</strong> August 9, 2026</p>
-
+      <p class="muted"><strong>Last updated:</strong> September 24, 2026</p>
       <h2>Overview</h2>
-      <p>
-        PriceFuse is developed by Valerii Nikolaev ("we", "us", "the developer").
-        This Privacy Policy describes how data may be processed when you use the app.
-        We aim to collect and use as little data as reasonably possible for core functionality.
-      </p>
-
+      <p>PriceFuse is developed by Valerii Nikolaev ("we", "us", "the developer").</p>
+      <p>This Privacy Policy describes how data may be processed when you use the app.</p>
+      <p>We aim to collect and use as little data as reasonably possible for core functionality.</p>
       <h2>Data We Collect</h2>
-      <p><strong>Data you provide through app features</strong></p>
+      <h3>Data you provide through app features</h3>
       <ul>
-        <li>Camera and photo library inputs may be used so the app can scan prices and recognize text (OCR).</li>
+        <li>Camera and selected photo inputs are processed on your device using Apple Vision to scan prices and recognize text (OCR). The app does not upload these images or recognized amounts to our rates server.</li>
         <li>Optional voice input may capture audio so spoken numbers can be recognized.</li>
         <li>Optional voice recognition may be processed by Apple’s speech services; depending on Apple platform behavior and settings, portions of audio and recognition data may be sent to Apple for processing and service analytics/quality purposes.</li>
-        <li>Currency selections and related app settings may be stored locally on your device.</li>
+        <li>Entered amounts, calculation state, currency selections, and related settings are stored or processed locally on your device. Entered amounts and calculator expressions are not sent to our rates server.</li>
+        <li>The paired iPhone and Apple Watch transfer rate data, selected currency information, language settings, Premium access state, and crypto catalog/icon data using Apple WatchConnectivity.</li>
       </ul>
-      <p><strong>Data processed by app infrastructure</strong></p>
+      <h3>Rates, crypto assets, icons, and network requests</h3>
       <ul>
-        <li>Currency rates are fetched from an external rates provider over HTTPS.</li>
-        <li>Requests to external services may include technical network metadata (for example, IP address and standard request metadata) as part of normal internet communication.</li>
+        <li>The app requests currency rates, crypto quotes, asset catalog information, and crypto icons over HTTPS from our backend hosted on Cloudflare Workers. Our backend obtains reference data from Open Exchange Rates and CoinMarketCap and caches it for delivery to the app.</li>
+        <li>Requests can include currency or crypto asset identifiers needed to retrieve quotes or icons. These identifiers describe the requested assets; they do not disclose wallet addresses, private keys, balances, or actual financial transactions. PriceFuse does not provide a wallet or execute cryptocurrency transactions.</li>
+        <li>Cloudflare receives IP addresses and other network/request metadata when it handles these requests. It may process and retain network and security data to operate and protect its services under its policies. Our rates application code does not intentionally store client IP addresses in its authentication records or custom log messages, use them to determine your location, or forward them to market-data providers.</li>
+        <li>We do not use these requests for advertising or cross-app tracking. Our backend does not maintain a personal conversion history. Upstream market-data requests are made by our server, rather than by forwarding your scanned prices or entered amounts to those providers.</li>
       </ul>
-      <p><strong>Purchases</strong></p>
+      <h3>App authentication and abuse prevention</h3>
+      <p>We use Apple App Attest to help verify requests from a genuine installation of PriceFuse and protect the rates service from abuse. The app sends an App Attest key identifier and cryptographic proof to our backend. The backend stores a hashed installation-related identifier, the associated public key, an Apple attestation receipt, a replay-protection counter, and an expiry time. Short-lived challenge records and session tokens support this verification.</p>
+      <p>These identifiers allow the service to recognize an app installation for authentication, rate limiting, and security. Hashing does not make an installation identifier anonymous. We do not use it as an advertising identifier or link it to subscription analytics for advertising purposes. Authentication records expire after 90 days without successful registration or authentication; successful authentication renews that period. Expired records are removed by periodic cleanup.</p>
+      <h3>Operational diagnostics</h3>
+      <p>Our backend records limited operational events, such as authentication operation and result codes, processing duration, and scheduled refresh failures. Cloudflare can retain these custom logs and associated service metadata to help us diagnose failures and maintain the service. Our custom log messages do not include entered amounts, scanned images, voice recordings, raw authentication proofs, or client IP addresses. Cloudflare's network and security processing is separate from these custom log messages.</p>
+      <h3>Purchases</h3>
       <ul>
         <li>If you use subscriptions, purchase and entitlement status is handled through Apple StoreKit.</li>
         <li>We do not receive your full payment card details from Apple.</li>
       </ul>
-      <p><strong>What we typically do not collect</strong></p>
+      <h3>What we typically do not collect</h3>
       <ul>
         <li>The app does not require user account registration.</li>
         <li>We do not include third-party analytics SDKs or third-party crash-reporting SDKs in the current project build.</li>
         <li>We do not run in-app advertising and we do not sell personal data.</li>
       </ul>
-
       <h2>How We Use Data</h2>
       <p>We may use data to:</p>
       <ul>
         <li>provide OCR scanning from camera/photos;</li>
         <li>provide voice number recognition;</li>
-        <li>provide currency conversion and refresh exchange rates;</li>
+        <li>provide currency and crypto conversion, refresh reference rates, and deliver asset names and icons;</li>
+        <li>authenticate app installations, prevent abuse and replay attacks, and diagnose service failures;</li>
         <li>keep a local cache so conversion can continue to work offline where possible;</li>
         <li>maintain app settings and purchase access state on device.</li>
       </ul>
-
       <h2>Sharing</h2>
-      <p>
-        We may share limited data with service providers only to the extent needed to provide app functionality:
-      </p>
+      <p>We may share limited data with service providers only to the extent needed to provide app functionality:</p>
       <ul>
-        <li><strong>Exchange rate provider:</strong> requests for currency rates over HTTPS.</li>
-        <li><strong>Apple services:</strong> StoreKit for purchases and Apple system speech-recognition services when voice input is used.</li>
+        <li><strong>Cloudflare</strong>: hosting, delivery and caching of reference rates, catalogs and icons, App Attest verification storage, network security, and operational diagnostics.</li>
+        <li><strong>Market-data providers</strong>: Open Exchange Rates and CoinMarketCap supply reference data and asset information to our backend.</li>
+        <li><strong>Apple services</strong>: StoreKit for purchases, App Attest for authentication, WatchConnectivity between paired devices, and system speech-recognition services when voice input is used.</li>
+        <li><strong>Telegram</strong>: private subscription-event summaries, as described below.</li>
       </ul>
-      <p>
-        For voice recognition, audio/transcript handling may be performed by Apple according to Apple’s
-        platform behavior and policies. We do not control Apple’s independent data practices.
-      </p>
-      <p>
-        Other than the above, we do not intentionally share personal data with data brokers,
-        and we do not sell personal data.
-      </p>
-
+      <p>For voice recognition, audio/transcript handling may be performed by Apple according to Apple’s platform behavior and policies. We do not control Apple’s independent data practices.</p>
+      <p>We do not share personal data with data brokers or sell personal data. Cloudflare describes its network processing in its <a href="https://www.cloudflare.com/policies/privacy/">Privacy Policy</a>.</p>
       <h2>Subscription and Purchase Events</h2>
-      <p>
-        Apple sends the developer an App Store Server Notification when there is activity on a
-        purchase or subscription for the app — for example a trial, a renewal, a cancellation, a
-        billing problem, an expiry, or a refund. This is a server-to-server message from Apple; the
-        app itself does not transmit this information from your device.
-      </p>
-      <p>
-        These notifications describe the transaction, not your identity. They contain details such as
-        the product identifier, the price and currency, the App Store storefront country, the app
-        build number, relevant dates, how long a subscription has been active, whether the purchase
-        is Family Shared, and a pseudonymous Apple transaction identifier. They do not contain your
-        name, email address,
-        Apple Account, payment card details, device model, or location.
-      </p>
-      <p>
-        The developer receives these notifications on a serverless endpoint hosted by Cloudflare,
-        which processes them in transit without storing them, and forwards a summary to a private
-        Telegram chat with a bot that only the developer can read. The Apple transaction identifier
-        is truncated before it is forwarded, so the message keeps only enough of it to connect events
-        belonging to the same subscription. This information is used solely for the developer's own
-        purposes, primarily analytics: how many subscriptions start, renew, or end, and the overall
-        health of the app's paid features.
-        It is never used for advertising, never combined with data from other sources, never sold,
-        and never shared with data brokers.
-      </p>
-      <p>
-        Cloudflare and Telegram act as service providers for this data and may process it outside
-        your country of residence. We share it with them only to the extent described above, and we
-        require that they provide the same or equal protection of user data as set out in this
-        Privacy Policy. We do not authorize them to use it for their own purposes.
-      </p>
-      <p>
-        These messages are not linked to an account, an email address, or any identifier you could
-        give us. We deliberately do not collect anything that would let us connect them to you —
-        which also means we are not able to locate your records if you ask us to. We will not delete
-        records on the basis of an unverified description, because responding to such a request would
-        itself confirm to whoever asked that a matching purchase exists. Where a controller cannot
-        identify a data subject, data protection law does not require it to collect additional
-        information for the sole purpose of enabling such requests.
-      </p>
-      <p>
-        We keep these messages only for as long as they are useful for monitoring the app's paid
-        features. Cancelling your subscription in your Apple Account settings stops any further
-        events from being generated.
-      </p>
-
+      <p>Apple sends the developer an App Store Server Notification when there is activity on a purchase or subscription for the app — for example a trial, a renewal, a cancellation, a billing problem, an expiry, or a refund. This is a server-to-server message from Apple; the app itself does not transmit this information from your device.</p>
+      <p>These notifications describe a purchase or subscription and include pseudonymous transaction information. They contain details such as the product identifier, the price and currency, the App Store storefront country, the app build number, relevant dates, how long a subscription has been active, whether the purchase is Family Shared, and a pseudonymous Apple transaction identifier. They do not contain your name, email address, Apple Account, payment card details, device model, or location.</p>
+      <p>The developer receives these notifications on a serverless endpoint hosted by Cloudflare, which relays the notification to the developer without an application-level purchase database and forwards a summary to a private Telegram chat with a bot that only the developer can read. The Apple transaction identifier is truncated before it is forwarded, so the message keeps only enough of it to connect events belonging to the same subscription. These records are pseudonymous, rather than guaranteed to be anonymous. This information is used for subscription analytics: how many subscriptions start, renew, or end, and the overall health of the app's paid features. It is never used for advertising, never combined with data from other sources, never sold, and never shared with data brokers.</p>
+      <p>Cloudflare and Telegram provide the infrastructure used for these summaries and may process data outside your country of residence. We share data with them only for the purposes described here and require the same or equal protection of user data as stated in this Privacy Policy and required by applicable platform rules. Their service terms and privacy policies also describe their processing. We do not use the summaries for advertising or authorize advertising use on our behalf.</p>
+      <p>We do not normally receive your name or contact details with these notifications or match them to an app account. A transaction reference can nevertheless connect events belonging to a subscription. Contact us if you have a privacy request. We may need sufficient information to locate relevant records and verify your authority; if we cannot identify the relevant records, we will explain that limitation.</p>
+      <p>We keep subscription summaries only for as long as reasonably needed to monitor paid features and handle related issues. Cancelling a subscription stops future renewal according to Apple's rules; it does not erase previous records or prevent subsequent cancellation, expiry, refund, or other relevant notifications from Apple.</p>
       <h2>Data Retention</h2>
       <ul>
-        <li>Exchange-rate cache and app settings are typically stored locally and may remain until cleared, overwritten, or the app is removed.</li>
-        <li>OCR and voice inputs are typically processed for immediate app functionality; we strive not to retain raw media longer than needed for that purpose.</li>
+        <li>Exchange rates, crypto catalogs/icons, calculation state, and app settings are stored locally and may remain until cleared, replaced, or the app is removed. Data already transferred to an Apple Watch is stored separately on that device.</li>
+        <li>Backend App Attest registrations follow the 90-day inactivity period described above. Deleting the app does not immediately delete server authentication records.</li>
+        <li>Operational logs follow the configured retention of the hosting service. Cloudflare may retain separate network/security data under its own policies; the authentication-record period is not a promise about every provider log.</li>
+        <li>We do not retain scanned images or voice recordings on our backend. Voice processing by Apple is governed by Apple's applicable terms and policies.</li>
         <li>Purchase entitlement state may be retained as needed to restore access.</li>
       </ul>
-
       <h2>Security</h2>
-      <p>
-        We use reasonable technical measures and strive to protect data to the extent possible,
-        including HTTPS for rate requests and platform-provided iOS security controls.
-        No method of transmission or storage can be guaranteed to be 100% secure.
-      </p>
-
+      <p>We use reasonable technical measures and strive to protect data to the extent possible, including HTTPS for rate requests and platform-provided iOS security controls. No method of transmission or storage can be guaranteed to be 100% secure.</p>
       <h2>Your Choices</h2>
       <p>You can typically:</p>
       <ul>
         <li>deny or revoke Camera, Photos, Microphone, and Speech Recognition permissions in iOS Settings;</li>
         <li>stop using voice input and rely on manual input;</li>
         <li>remove local app data by deleting the app;</li>
-        <li>manage subscriptions through your Apple ID subscription settings.</li>
+        <li>manage subscriptions through your Apple Account subscription settings;</li>
+        <li>contact us about access, correction, deletion, or other privacy requests, subject to applicable law and our ability to identify the relevant data. Deleting the app or cancelling a subscription does not automatically erase records retained by service providers.</li>
       </ul>
-
       <h2>Children’s Privacy</h2>
-      <p>
-        PriceFuse is not specifically directed to children under 13. We do not knowingly collect personal data
-        from children in a manner inconsistent with applicable law. If you believe a child provided data
-        inappropriately, please contact us.
-      </p>
-
+      <p>PriceFuse is not specifically directed to children under 13. We do not knowingly collect personal data from children in a manner inconsistent with applicable law. If you believe a child provided data inappropriately, please contact us.</p>
       <h2>International Users</h2>
-      <p>
-        If you use the app outside your home country, data may be processed in other jurisdictions through Apple
-        and service-provider infrastructure. Data-protection laws may differ by region.
-      </p>
-
+      <p>If you use the app outside your home country, data may be processed in other jurisdictions through Apple and service-provider infrastructure. Data-protection laws may differ by region.</p>
       <h2>Changes</h2>
-      <p>
-        We may update this Privacy Policy from time to time. We will update the "Last updated" date when changes are made.
-      </p>
-
+      <p>We may update this Privacy Policy from time to time. We will update the "Last updated" date when changes are made.</p>
       <h2>Contact</h2>
-      <p>
-        Developer: Valerii Nikolaev<br />
-        Contact email: valnikodeveloper@gmail.com
-      </p>
+      <p>Developer: Valerii Nikolaev</p>
+      <p>Contact email: valnikodeveloper@gmail.com</p>
     </article>
   </main>
 </body>
