@@ -61,13 +61,14 @@
   <main class="wrap">
     <article class="card">
       <h1>Terms of Service for PriceFuse</h1>
-      <p class="muted"><strong>Last updated:</strong> September 24, 2026</p>
+      <p class="muted"><strong>Last updated:</strong> October 3, 2026</p>
 
       <h2>Overview and Acceptance</h2>
       <p>
         These Terms of Service ("Service Terms") govern the content, features, upgrades, and services
         made available through the PriceFuse iOS, iPadOS, and watchOS applications (collectively, the
-        "App"). The App is provided by Valerii Nikolaev ("we," "us," "our," or the "developer").
+        "App"), including the features introduced in version 2.2.0. Feature-specific terms apply where
+        those features are available in the version you use. The App is provided by Valerii Nikolaev ("we," "us," "our," or the "developer").
       </p>
       <p>
         By accessing or using the App, you agree to these Service Terms. If you do not agree, do not use
@@ -99,6 +100,9 @@
       <ul>
         <li>tools for scanning, recognizing, extracting, processing, organizing, comparing, and converting prices, amounts, currencies, and related information from camera input, photos, screenshots, or other images;</li>
         <li>currency and crypto-asset conversion, reference-rate display, calculation, and related utility features;</li>
+        <li>manually maintained currency and crypto-asset portfolios, estimated values, allocation views, purchase-price records, and charts based on available reference data;</li>
+        <li>portfolio import and export through supported CSV and JSON files;</li>
+        <li>scheduled or condition-based rate alerts delivered through push notifications;</li>
         <li>an Apple Watch companion that receives rates and access information from a paired iPhone;</li>
         <li>offline, cached, or limited-functionality modes for certain data or features;</li>
         <li>free and paid features, access levels, usage limits, subscriptions, trials, introductory offers, and other in-app purchase entitlements, where offered.</li>
@@ -108,6 +112,84 @@
         compatibility, or other conditions. Feature scope, access levels, pricing, and usage limits may
         change over time. Any feature or product offering may be modified, replaced, restricted,
         suspended, or discontinued at any time, with or without notice.
+      </p>
+
+      <h2>Portfolio Records, Valuations, and Charts</h2>
+      <p>
+        Portfolio entries are records you create or import. They are not proof of asset ownership or
+        records obtained from a bank, broker, exchange, or wallet. PriceFuse does not execute trades,
+        connect to financial accounts to verify holdings, or hold money or assets on your behalf.
+        You are responsible for the accuracy of quantities, asset selections, purchase prices, dates,
+        and other information you enter or import.
+      </p>
+      <p>
+        Portfolio totals, average purchase prices, and displayed changes are estimates based on your
+        entries, calculation methods, and available reference rates. They may omit fees, taxes,
+        spreads, realized transactions, or other factors and are not audited statements or tax reports.
+        Where the app substitutes an available reference rate for a missing purchase price, that
+        estimate is not your verified historical acquisition cost.
+      </p>
+      <p>
+        Charts depend on the selected mode and the available data. An absolute chart can show current
+        holdings valued at historical rates rather than the amounts you actually held on every past
+        date. Relative rate-performance charts use recorded holdings changes to separate rate movements
+        from additions or withdrawals, subject to data coverage and the explanation shown in the app.
+        Missing quotes, limited history, and gaps can affect the displayed period and comparisons.
+        Lines between observations do not represent continuously observed market prices. Past changes
+        do not predict future results.
+      </p>
+      <p>
+        Portfolio tracking and charts are available in both Free and Premium modes for the assets
+        permitted by each mode. Premium extends access to additional currencies and crypto assets.
+        If Premium access ends, views or calculations involving restricted assets may be limited.
+      </p>
+
+      <h2>Local Storage, Import, and Export</h2>
+      <p>
+        Portfolio records are stored locally. PriceFuse does not provide a developer-hosted backup or
+        automatic portfolio synchronization service. Device loss, app deletion, unavailable storage,
+        corrupted files, or other technical problems may cause data loss. Keep separate copies of
+        important records using the available export options or your device's backup facilities.
+      </p>
+      <p>
+        Import and export formats have different capabilities. A CSV export is not a complete backup
+        of every app setting or recorded history; supported JSON backups can preserve portfolio history.
+        Imported entries may be combined or interpreted according to the selected format and the
+        instructions shown in the app. Review the import confirmation and resulting records. You are
+        responsible for the contents of files you select and for recipients and storage destinations
+        you choose when exporting or sharing them.
+      </p>
+
+      <h2>Rate Alerts and Push Notifications</h2>
+      <p>
+        Rate alerts are informational reminders based on reference quotes and the rules you configure.
+        They are not trading orders, continuous market monitoring, emergency notices, or a guarantee
+        that a target rate will be detected or remain available. A threshold can be crossed between
+        checks without producing a notification. Checks, reference-data refreshes, and delivery have
+        separate timing limits and may differ between Free and Premium access.
+      </p>
+      <p>
+        Alert availability depends on supported assets and schedules, verified access, successful
+        server synchronization, current reference data, and permission to receive notifications.
+        Apple notification delivery, network conditions, system settings, service outages, or access
+        changes may delay, suppress, or prevent an alert. A selected schedule is not a guarantee of
+        delivery at an exact time. Notification content may already be outdated when you read it.
+      </p>
+      <p>
+        Changes to alert rules must successfully reach the backend to take effect. If synchronization
+        fails, previously saved server settings may remain active. You can disable or delete rules in
+        the app and manage notification permission in system Settings. Stopping notifications does not
+        cancel a subscription or automatically delete server records. The Privacy Policy explains
+        identifier, entitlement, and alert-data processing.
+      </p>
+
+      <h2>Number Formatting</h2>
+      <p>
+        Currency-aware number formatting applies to converters, including camera and photo scan
+        results. Depending on the currency and selected format, displayed digits, decimal separators,
+        and grouping conventions may differ from your device settings. This feature does not promise
+        the same currency-specific format on every screen; portfolio displays use device-based number
+        formatting. Verify the selected currency and the numeric value before relying on a result.
       </p>
 
       <h2>No Financial, Tax, Accounting, or Legal Advice</h2>
@@ -204,6 +286,14 @@
         handling, or refund decisions made by Apple.
       </p>
 
+      <h2>Privacy and Optional Analytics</h2>
+      <p>
+        Data processing is described in our <a href="privacy.html">Privacy Policy</a>, including local
+        portfolio data, server-based rate alerts, purchase verification, and optional Google Analytics
+        for Firebase. Usage analytics requires your separate in-app consent and can be turned off in
+        Settings. Accepting these Service Terms or purchasing Premium does not itself enable analytics.
+      </p>
+
       <h2>Acceptable Use</h2>
       <p>You agree not to:</p>
       <ul>
@@ -218,7 +308,9 @@
       <p>
         The App may depend on Apple services and other third-party services, frameworks, devices, or
         data sources, including StoreKit, camera services, photo-library services, speech-recognition
-        services, Apple App Attest, WatchConnectivity, Cloudflare hosting and delivery, and currency or crypto market-data providers, including Open Exchange Rates and CoinMarketCap.
+        services, Apple App Attest, App Store server services, Apple Push Notification service, WatchConnectivity,
+        Cloudflare hosting and delivery, optional Google Analytics for Firebase, and currency or crypto
+        market-data providers, including Open Exchange Rates and CoinMarketCap.
       </p>
       <p>
         These services and components are outside our control. They may change, fail, become unavailable,
